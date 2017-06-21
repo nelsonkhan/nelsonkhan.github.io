@@ -2,6 +2,10 @@
 html(lang="en")
 head
     meta(charset="UTF-8")
+    meta(
+        name="viewport" 
+        content="width=device-width"
+        )
     link(
         rel="stylesheet", 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", 
@@ -40,20 +44,21 @@ body
     .row.pad-top
         .container
             .col-md-6
-                p.lead.grey.italic PRESENT
+                p.lead.grey.italic.mobile-hidden PRESENT
                 h3.font-weight-bold GENEVIEVE DIGITAL
-                .col-md-6
+                .col-md-6.mobile-hidden
                     ul
                         li UI / UX Design
                         li Frontend Coding
                         li Presenting Designs
-                .col-md-6
+                .col-md-6.mobile-hidden
                     ul
                         li Building APIs
                         li Mentoring Jr. Developer
                         li Deploying Websites
             .col-md-6
-                p.lead.grey.text-align-right.italic 2017
+                p.lead.grey.text-align-right.italic.mobile-hidden 2017
+                p.lead.grey.text-align-right.italic.desktop-hidden 2017-PRESENT
                 br
                 p.
                     I currently work on Vecta Travel, a web-based
@@ -65,12 +70,12 @@ body
         .container
             .col-md-6
                 h3.font-weight-bold FREELANCE DEVELOPMENT
-                .col-md-6
+                .col-md-6.mobile-hidden
                     ul
                         li Prototyping
                         li Frontend Coding
                         li Wireframing
-                .col-md-6
+                .col-md-6.mobile-hidden
                     ul
                         li Website Maintenance
                         li Analytics Management
@@ -83,7 +88,8 @@ body
                     strategies and options with client base.
     .row.pad-top
         .container.border-btm
-            h2.font-weight-bold SKILLS
+            .col-md-4
+                h2.font-weight-bold SKILLS
     .row.pad-top.text-center
         .container
             <i class="devicon-react-original"></i>
